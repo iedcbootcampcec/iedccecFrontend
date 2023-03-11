@@ -1,4 +1,4 @@
-import Navlink from './atoms/Navlink'
+import Navlink from '../../components/atoms/Navlink'
 
 function Nav() {
   return (

@@ -4,6 +4,7 @@ import Announcement from './sections/Announcment/Announcement'
 import Achievements from './sections/Achievements/Achievements'
 import Testimonials from './sections/Testimonials/Testimonials'
 import Footer from './sections/Footer/Footer'
+import Team from './sections/Team/Team'
 
 function App() {
   return(
@@ -13,7 +14,11 @@ function App() {
         <Iet/>
         <Announcement/>
         <Achievements/>
+        
+        <Team/>
         <Testimonials/>
+        
+          
       </div>
       <div><Footer/></div>
     </div>

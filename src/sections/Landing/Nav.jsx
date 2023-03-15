@@ -23,12 +23,21 @@ function Nav() {
       </div>
 
       <ul class='flex items-center'>
-        <Navlink linkText='Blog' linkAddress='#blog' />
-        <Navlink linkText='Event' linkAddress='#event' />
-        <Navlink linkText='Team' linkAddress='#team' />
-        <Navlink linkText='About' linkAddress='#about' />
+      <li class="text-sm mr-12">
+            <a class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#vision">Our Vision</a></li>
+           <li class="text-sm mr-12">
+            <a class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer" href="#announcment-section">Events</a></li>
+          <li class="text-sm mr-12">
+            <a class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer" href="#achievements">Achievements</a></li>
+          <li class="text-sm mr-12">
+            <a class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer" href="#team">Team</a></li>
+            <li class="text-sm mr-12">
+            <a class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer" href="#about">About</a></li>
 
-        <button class='text-sm text-white bg-black rounded-md px-5 py-[6px] hover:bg-white hover:rounded-none border-2 box-border hover:text-black border-black cursor-pointer'>
+
+
+        <button  class="text-sm text-white bg-black rounded-md px-6 py-2 transition hover:bg-transparent hover:text-black hover:ring-2 hover:ring-black cursor-pointer">
           JoinUs
         </button>
       </ul>

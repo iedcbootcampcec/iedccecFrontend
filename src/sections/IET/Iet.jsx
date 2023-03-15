@@ -10,12 +10,12 @@ function iet() {
         AOS.init({duration:2000,once:false})
       },[])
   return (
-    <div class="pt-16 mb-16 flex flex-row flex-wrap justify-between  ">
+    <div id="vision" class="pt-16 mb-16 flex flex-row flex-wrap justify-between  ">
         <div data-aos="fade-up"  class="w-[300px] h-[350px] flex flex-col items-center justify-center border-[1px] border-gray-300 rounded-2xl shadow-lg p">
         <div  class="w-24 h-24 mb-3 flex">
             <img class="w-full h-full object-cover"  src={img1} alt=""/>
         </div>
-        <h1 class="text-center text-xl font-semibold mb-3">Innovation</h1>
+        <h1  class="text-center text-xl font-semibold mb-3">Innovation</h1>
         <div class="w-[70%]"><p class="text-[12px] text-gray-500 text-center">As a leading innovation hub, we are committed to fostering a culture of creativity and out-of-the-box thinking. We offer a range of programs and services designed to support innovators at all stages of their journey, from ideation to commercialization.</p></div>
         </div>
         

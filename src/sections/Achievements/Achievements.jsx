@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "../../../node_modules/react-multi-carousel/lib/styles.css";
-import Cards from './cards';
+import Cards from './Cards';
 
 
 
@@ -29,7 +29,7 @@ export default function Achievements() {
 
       
   return (
-    <div id="achievements" class="mb-16">
+    <div  class="mb-16">
         <div class="flex items-center my-7">
             <div class="p-[6px] rounded-md bg-black mr-2">
                 <svg
@@ -48,7 +48,7 @@ export default function Achievements() {
                 />
                 </svg>
             </div>
-            <h2 class="text-2xl">Achievements</h2>
+            <h2 id="achievements" class="text-2xl">Achievements</h2>
         </div>
 
         <div className="carousel">

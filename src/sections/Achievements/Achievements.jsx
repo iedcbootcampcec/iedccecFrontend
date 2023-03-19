@@ -58,6 +58,7 @@ export default function Achievements() {
                 <div><Cards/></div>
                 <div><Cards/></div>
                 <div><Cards/></div>
+                <div><Cards/></div>
             </Carousel>
         </div>
 

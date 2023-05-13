@@ -42,8 +42,8 @@ export const About = () => {
             technology graduates to pursue entrepreneurship as a profession and
             become job providers rather than job seekers.
           </p>
-          <div className="w-[550px] h-[400px]">
-            <img src={college} className="w-full h-full object-cover" />
+          <div className="w-[550px] h-[400px] overflow-hidden">
+            {/* <img src={college} className="w-full h-full object-cover" /> */}
           </div>
           <h3 className="pb-10 text-gray-500">
             COLLEGE OF ENGINEERING CHENGANNUR

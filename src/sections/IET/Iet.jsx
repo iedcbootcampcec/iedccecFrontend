@@ -8,12 +8,12 @@ import { Quotes } from "./Quotes"
 
 export const Iet = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000, once:true})
+    AOS.init({ duration: 2000, once: true })
   }, [])
   return (
-    <div className="mt-5 mb-5">
+    <div id="vision" className="mt-5 mb-5">
       <Quotes />
-      <div id="vision" class="pt-16 mb-16 flex flex-col">
+      <div class="pt-16 mb-16 flex flex-col">
         <div className="flex flex-row flex-wrap justify-between gap-6">
           <div
             data-aos="flip-up"

@@ -29,9 +29,13 @@ function Landing() {
     }
   }, [vantaEffect])
   return (
-    <div ref={myRef} className="h-screen px-2 sm:px-16">
-      <Nav />
-      <Header />
+    <div>
+      <div>
+        <Nav />
+      </div>
+      <div ref={myRef} className="h-screen px-2 sm:px-16">
+        <Header />
+      </div>
     </div>
   )
 }

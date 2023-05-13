@@ -1,26 +1,9 @@
-import Navlink from "../../components/atoms/Navlink"
-import React, { useRef, useState } from "react"
-import "./Navbar.css"
-import { FaTimes, FaBars } from "react-icons/fa"
+import React from "react"
 
-function Nav() {
-  const [nav, setNav] = useState(false)
-  const navbg = () => {
-    if (window.scrollY >= 90) {
-      setNav(true)
-    } else {
-      setNav(false)
-    }
-  }
-  window.addEventListener("scroll", navbg)
-
-  const navRef = useRef()
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive-nav")
-  }
+export const test = () => {
   return (
-    <header className={nav && "header-bg"}>
-      <div className="px-[65px]">
+    <nav class="flex items-center pt-2 sm:py-8 justify-between tracking-wider">
+      <div>
         <svg
           width="60"
           height="29"
@@ -38,25 +21,53 @@ function Nav() {
           />
         </svg>
       </div>
-      <nav ref={navRef}>
-        <a href="#vision">Our Vision</a>
-        <a href="#announcment-section"> Events</a>
-        <a href="#achievements"> Achievements</a>
-        <a href="#team"> Team</a>
-        <a href="#About"> About</a>
+
+      <ul class="flex items-center">
+        <li class="text-sm mr-12">
+          <a
+            class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#vision"
+          >
+            Our Vision
+          </a>
+        </li>
+        <li class="text-sm mr-12">
+          <a
+            class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#announcment-section"
+          >
+            Events
+          </a>
+        </li>
+        <li class="text-sm mr-12">
+          <a
+            class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#achievements"
+          >
+            Achievements
+          </a>
+        </li>
+        <li class="text-sm mr-12">
+          <a
+            class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#team"
+          >
+            Team
+          </a>
+        </li>
+        <li class="text-sm mr-12">
+          <a
+            class="text-sm text-black bg-transparent rounded-full px-4 py-2 transition hover:bg-gray-200 hover:text-black hover:ring-2 hover:ring-transparent cursor-pointer"
+            href="#about"
+          >
+            About
+          </a>
+        </li>
+
         <button class="text-sm text-white bg-black rounded-md px-6 py-2 transition hover:bg-transparent hover:text-black hover:ring-2 hover:ring-black cursor-pointer">
           JoinUs
         </button>
-
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes className="icons times" />
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars className="icons bars" />
-      </button>
-    </header>
+      </ul>
+    </nav>
   )
 }
-
-export default Nav

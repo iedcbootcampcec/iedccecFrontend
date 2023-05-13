@@ -7,6 +7,7 @@ import Team from "./sections/Team/Team"
 import Subteam from "./sections/Sub team/Subteam"
 import { About } from "./sections/About/About"
 import { Card_Slider } from "./sections/Slider/Card_Slider"
+import { Iet } from "./sections/IET/Iet"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Landing />
       </div>
       <div className="px-16 w-full">
+        <Iet/>
         <Announcement />
         <Achievements />
         <Card_Slider />

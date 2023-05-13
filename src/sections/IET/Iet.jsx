@@ -11,12 +11,6 @@ function iet() {
   }, [])
   return (
     <div id="vision" class="pt-16 mb-16 flex flex-col">
-      <div className="w-[500px] h-fit  self-center mb-10">
-        <h1 className="text-6xl text-center font-extrabold">
-          "THE BEST WAY TO PREDICT THE FUTURE IS TO CREATE IT."
-        </h1>
-        <p className="text-center"> - Peter Drucker</p>
-      </div>
       <div className="flex flex-row flex-wrap justify-between ">
         <div
           data-aos="fade-up"

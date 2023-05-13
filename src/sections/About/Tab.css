@@ -1,0 +1,87 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #ffffff;
+  margin: 100px auto 0;
+  word-break: break-all;
+  border: none;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  font-size: 25px;
+  position: relative;
+  outline: none;
+  transition-duration: 0.5s;
+}
+
+.active-tabs {
+  background: white;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: rgb(0, 0, 0);
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background: white;
+  padding: 30px;
+  width: 60%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #808080;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}

@@ -1,7 +1,7 @@
-import Nav from './Nav'
-import Header from './Header'
-import React, { useState, useEffect, useRef } from 'react'
-import GLOBE from 'vanta/dist/vanta.globe.min'
+import Nav from "./Nav"
+import Header from "./Header"
+import React, { useState, useEffect, useRef } from "react"
+import GLOBE from "vanta/dist/vanta.globe.min"
 
 function Landing() {
   const [vantaEffect, setVantaEffect] = useState(null)
@@ -29,7 +29,7 @@ function Landing() {
     }
   }, [vantaEffect])
   return (
-    <div ref={myRef} className='h-screen px-2 sm:px-16'>
+    <div ref={myRef} className="h-screen px-2 sm:px-16">
       <Nav />
       <Header />
     </div>

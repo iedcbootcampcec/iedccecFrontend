@@ -46,7 +46,7 @@ export default function Achievements() {
           Achievements
         </h2>
       </div>
-
+    
       <div className="carousel">
         <Carousel
           responsive={responsive}
@@ -73,6 +73,20 @@ export default function Achievements() {
           </div>
         </Carousel>
       </div>
+=======
+        <div className="carousel">
+            <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={4000} infinite={true} showDots={true} focusOnSelect={true}>
+                <div><Cards/></div>
+                <div><Cards/></div>
+                <div><Cards/></div>
+                <div><Cards/></div>
+                <div><Cards/></div>
+                <div><Cards/></div>
+            </Carousel>
+        </div>
+
+
+
     </div>
   )
 }

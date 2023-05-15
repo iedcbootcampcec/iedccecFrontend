@@ -1,32 +1,19 @@
 import React from "react"
-import Carousel from "react-multi-carousel"
-import "../../../node_modules/react-multi-carousel/lib/styles.css"
-import Cards from "./Cards"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination, Autoplay } from "swiper"
+
+// Import Swiper styles
+import "swiper/swiper-bundle.min.css"
+import data from "./Achievements.json"
 
 export default function Achievements() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  }
-
   return (
     <div class="mb-16">
-      <div class="flex items-center my-7">
+      <div
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        class="flex items-center my-7"
+      >
         <div class="p-[6px] rounded-md bg-black mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,32 +33,79 @@ export default function Achievements() {
           Achievements
         </h2>
       </div>
-
-      <div className="carousel">
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          autoPlaySpeed={4000}
-          infinite={true}
-          showDots={true}
-          focusOnSelect={true}
+      <div className="Card h-fit sm:block hidden">
+        <Swiper
+          navigation={true}
+          modules={[Navigation, Pagination, Autoplay]}
+          className="mySwiper"
+          slidesPerView={3}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={swiper => console.log(swiper)}
         >
-          <div>
-            <Cards />
-          </div>
-          <div>
-            <Cards />
-          </div>
-          <div>
-            <Cards />
-          </div>
-          <div>
-            <Cards />
-          </div>
-          <div>
-            <Cards />
-          </div>
-        </Carousel>
+          {data &&
+            data.map(item => {
+              return (
+                <SwiperSlide>
+                  <div className="mb-[100px]">
+                    <div className="w-[300px] h-[200px]">
+                      <img
+                        src={item.image}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="bottom w-[280px] h-fit">
+                      <h1 class="text-center text-xl font-semibold mb-3">
+                        {item.title}
+                      </h1>
+                      <p class="text-sm text-gray-500 text-center">{item.description}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              )
+            })}
+        </Swiper>
+      </div>
+      <div className="sm:hidden block">
+        <Swiper
+          navigation={true}
+          modules={[Navigation, Pagination, Autoplay]}
+          className="mySwiper"
+          slidesPerView={1}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={swiper => console.log(swiper)}
+        >
+          {data &&
+            data.map(item => {
+              return (
+                <SwiperSlide>
+                  <div className="mb-[50px]">
+                    <div className="w-[300px] h-[200px]">
+                      <img
+                        src={item.image}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="bottom w-[280px] h-fit">
+                      <h1 class="text-center text-xl font-semibold mb-3">
+                        {item.title}
+                      </h1>
+                      <p class="text-sm text-gray-500">{item.description}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              )
+            })}
+        </Swiper>
       </div>
     </div>
   )

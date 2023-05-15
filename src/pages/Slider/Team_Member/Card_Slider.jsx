@@ -32,7 +32,6 @@ export const Card_Slider = () => {
           }}
           effect={"coverflow"}
           grabCursor={true}
-          centeredSlides={true}
           slidesPerView={5}
           coverflowEffect={{
             rotate: 0,
@@ -41,7 +40,6 @@ export const Card_Slider = () => {
             modifier: 2,
             slideShadows: true,
           }}
-          loop={true}
           navigation={true}
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}

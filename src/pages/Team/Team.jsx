@@ -1,30 +1,17 @@
 import React, { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 
-import Carousel from "react-multi-carousel"
 import "../../../node_modules/react-multi-carousel/lib/styles.css"
 
-import img4 from "../../images/team/parvathy.jpeg"
-import img5 from "../../images/team/archana.jpg"
-import img6 from "../../images/team/sujii.jpeg"
-import img7 from "../../images/team/durga.jpeg"
-import img8 from "../../images/team/haripriya.jpg"
-import img9 from "../../images/team/Breesa.jpg"
-import img10 from "../../images/team/nishanth.jpg"
-import img11 from "../../images/team/visal.jpeg"
-import img12 from "../../images/team/prajeeth.jpeg"
-import { Member } from "./Member"
-import Cards from "../Achievements/Cards"
 import { Card_Slider } from "../Slider/Team_Member/Card_Slider"
 
 export default function Announcement() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false })
-  }, [])
   return (
-    <div data-aos="fade-up" id="team" class="flex flex-col mb-16 ">
-      <div class="flex items-center my-7">
+    <div id="team" class="flex flex-col mb-16 ">
+      <div
+        class="flex items-center my-7"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+      >
         <div class="p-[6px] rounded-md bg-black mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

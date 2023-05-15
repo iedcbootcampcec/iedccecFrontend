@@ -1,11 +1,14 @@
 import React from "react"
-import { Card_Slider } from "../Slider/Team_Member/Card_Slider"
 import { SubTeam_Slider } from "../Slider/Sub_Member/SubTeam_Slider"
 
 function Subteam() {
   return (
-    <div data-aos="fade-up" id="team" class="mb-16 ">
-      <div class="flex items-center my-7">
+    <div id="team" class="mb-16 ">
+      <div
+        class="flex items-center my-7"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+      >
         <div class="p-[6px] rounded-md bg-black mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

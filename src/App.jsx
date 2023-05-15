@@ -14,7 +14,7 @@ function App() {
       <div>
         <Landing />
       </div>
-      <div className="px-16 w-full">
+      <div className="sm:px-16 px-10 w-full">
         <Iet />
         <Announcement />
         <Achievements />

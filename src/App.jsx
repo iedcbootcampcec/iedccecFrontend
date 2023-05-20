@@ -1,12 +1,13 @@
-import Landing from "./pages/Landing/Landing"
-import Announcement from "./pages/Announcment/Announcement"
-import Achievements from "./pages/Achievements/Achievements"
-import Testimonials from "./pages/Testimonials/Testimonials"
-import Footer from "./pages/Footer/Footer"
-import Team from "./pages/Team/Team"
-import Subteam from "./pages/Sub team/Subteam"
-import { About } from "./pages/About/About"
-import { Iet } from "./pages/IET/Iet"
+import Landing from "./sections/Landing/Landing"
+import Announcement from "./sections/Announcment/Announcement"
+import Achievements from "./sections/Achievements/Achievements"
+import Testimonials from "./sections/Testimonials/Testimonials"
+import Footer from "./sections/Footer/Footer"
+import Team from "./sections/Team/Team"
+import Subteam from "./sections/Sub team/Subteam"
+import { About } from "./sections/About/About"
+import { Card_Slider } from "./sections/Slider/Card_Slider"
+import { Iet } from "./sections/IET/Iet"
 
 function App() {
   return (
@@ -14,13 +15,14 @@ function App() {
       <div>
         <Landing />
       </div>
-      <div className="sm:px-16 px-10 w-full">
-        <Iet />
+      <div className="px-16 w-full">
+        <Iet/>
         <Announcement />
         <Achievements />
-        <About />
+        <Card_Slider />
         <Team />
         <Subteam />
+        <About />
         <Testimonials />
       </div>
       <div>

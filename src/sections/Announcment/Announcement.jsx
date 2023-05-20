@@ -9,11 +9,7 @@ export default function Announcement() {
   return (
     <div class="flex flex-row">
       <div class="mb-16">
-        <div
-          class="flex items-center my-7"
-          data-aos="flip-up"
-          data-aos-duration="1000"
-        >
+        <div class="flex items-center my-7">
           <div class="p-[6px] rounded-md bg-black mr-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

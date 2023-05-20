@@ -4,8 +4,8 @@ import { Tab } from "./Tab"
 
 export const About = () => {
   return (
-    <div id="About" className="flex flex-col mb-16 h-fit">
-      <div data-aos="flip-up" data-aos-duration="1000" class="flex my-7">
+    <div id="About" className="flex flex-col mb-16">
+      <div class="flex my-7">
         <div class="p-[6px] rounded-md bg-black mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,12 +26,8 @@ export const About = () => {
         </h2>
       </div>
       <div className="flex justify-center items-center">
-        <div className="w-[100%] sm:w-[80%] h-fit border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] flex flex-col justify-center items-center">
-          <p
-            data-aos="flip-up"
-            data-aos-duration="1000"
-            className="sm:p-14 p-4 text-gray-400 text-md text-center"
-          >
+        <div className="w-[80%] h-fit border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] flex flex-col justify-center items-center">
+          <p className="p-14  text-gray-400 text-md text-center">
             The Innovation and Entrepreneurship Development Cell [IEDC] Bootcamp
             College of Engineering Chengannur was established in June 2015 in
             association with Kerala Startup Mission [KSUM], with the vision of
@@ -46,10 +42,10 @@ export const About = () => {
             technology graduates to pursue entrepreneurship as a profession and
             become job providers rather than job seekers.
           </p>
-          <div className=" lg:w-[550px] overflow-hidden">
-            <img src={college} className="w-full h-full object-cover" />
+          <div className="w-[550px] h-[400px] overflow-hidden">
+            {/* <img src={college} className="w-full h-full object-cover" /> */}
           </div>
-          <h3 className="pb-10 text-gray-500 text-center" data-aos="fade-in">
+          <h3 className="pb-10 text-gray-500">
             COLLEGE OF ENGINEERING CHENGANNUR
           </h3>
         </div>

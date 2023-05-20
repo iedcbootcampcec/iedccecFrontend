@@ -39,13 +39,9 @@ export const Tab = () => {
             }
           >
             <p className="text-gray-400 text-md">
-              The mission of The Innovation and Entrepreneurship Development
-              Centre (IEDC) is to promote innovation and entrepreneurship by
-              creating a culture of entrepreneurship in educational
-              institutions. It aims to create awareness, provide incubation
-              support, develop skills, and promote collaboration between
-              industries and academia to foster the creation of successful
-              ventures that contribute to the economic growth of the country.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              praesentium incidunt quia aspernatur quasi quidem facilis quo
+              nihil vel voluptatum?
             </p>
           </div>
 
@@ -55,16 +51,8 @@ export const Tab = () => {
             }
           >
             <p className="text-gray-400 text-md">
-              The Innovation and Entrepreneurship Development Centre (IEDC) is a
-              platform that provides support and guidance to students and
-              faculty to foster entrepreneurship. Its primary objective is to
-              create an entrepreneurial culture in educational institutions.
-              This is achieved by creating awareness, providing incubation
-              support to startups, developing skills through training and
-              mentorship programs, and promoting collaboration between
-              industries and academia. IEDCs play a vital role in fostering
-              entrepreneurship, and it is essential for educational institutions
-              to establish them to promote innovation and entrepreneurship.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              voluptatum qui adipisci.
             </p>
           </div>
 

@@ -2,7 +2,7 @@ function Header() {
   return (
     <div class="flex flex-col justify-center items-center sm:items-start tracking-wider h-full">
       <div>
-        <h1 class="text-6xl sm:text-5xl font-['Krona_One'] tracking-tighter mb-6 -ml-1">
+        <h1 class=" text-6xl sm:text-5xl font-['Krona_One'] tracking-tighter mb-6 -ml-1">
           IEDC CEC
         </h1>
         <h3 class="text-md sm:text-xl mb-6">

@@ -143,7 +143,7 @@ export default function Announcement() {
         </div>
       </div>
 
-      <div data-aos="fade-left" class="ml-96 mt-16 ">
+      <div data-aos="fade-left" class="ml-96 mt-16 sm:block hidden ">
         <ul class="flex items-center">
           <li class="flex mr-6 my-2">
             <button class="text-[12px] text-gray-600 bg-white hover:bg-gray-100 text-gray-800 py-2 px-6 border border-gray-200 rounded shadow">

@@ -1,18 +1,22 @@
 import React, { useEffect } from "react"
 import AOS from "aos"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination } from "swiper";
 import "aos/dist/aos.css"
+import data from "./Announcement.json"
+import "swiper/swiper-bundle.min.css"
+
 
 export default function Announcement() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false })
+    AOS.init({ duration: 1000, once: false})
   }, [])
-  return (
+  return ( 
     <div class="flex flex-row">
       <div class="mb-16">
         <div
           class="flex items-center my-7"
-          data-aos="flip-up"
-          data-aos-duration="1000"
+          
         >
           <div class="p-[6px] rounded-md bg-black mr-2">
             <svg
@@ -34,116 +38,94 @@ export default function Announcement() {
           </h2>
         </div>
 
-        <div data-aos="fade-right" class="mt-7">
-          <div class="mt-1 mb-7">
-            <div class="flex flex-row">
-              <div class="flex flex-col">
-                <button class="text-[12px] text-gray-600 bg-gray-100 mb-2 w-20 py-1 rounded-md">
-                  Workshop
-                </button>
-                <div class="flex flex-col"></div>
-                <a href="" class="font-bold text-[16px] mb-2">
-                  HackLeague
-                </a>
-                <span class="text-[13px] text-gray-600 mb-2">
-                  IEDC Bootcamp CEC in association with IPL, Innovators Premier
-                  League
-                  <br /> is here with a session on Resume Building.
-                </span>
-                <div class="flex">
-                  <a href="" class="font-bold text-[13px] mb-2">
-                    Aromal Santhosh
-                  </a>
-                </div>
-                <div class="flex">
-                  <span class="text-[13px]    text-gray-600"> Room 314 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 23 Nov 2022 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 4:00 pm </span>
-                </div>
-              </div>
-              <div class="w-44 h-44">
-                <img class="w-full h-full object-cover" src="" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+        
+<div className="Card h-fit sm:block hidden">
+   <Swiper
+        direction={"vertical"}
+        height={100}
+        loop={true}
+        slidesPerView={1}
+        spaceBetween={100}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+        className="mySwiper"
+        
+      >
+        {data &&
+            data.map(item => {
+              return (
+                <SwiperSlide>
 
-        <div data-aos="fade-right" class="mt-7">
-          <div class="mt-1 mb-7">
+        <div  class="mt-7 mb-32">
+          <div class="mt-1 mb-7 mr-32 ">
             <div class="flex flex-row">
               <div class="flex flex-col">
-                <button class="text-[12px] text-gray-600 bg-gray-100 mb-2 w-20 py-1 rounded-md">
-                  Workshop
-                </button>
-                <div class="flex flex-col"></div>
-                <a href="" class="font-bold text-[16px] mb-2">
-                  HackLeague
+               <a href="" class="font-bold text-[16px] mb-2">
+                {item.title}
                 </a>
                 <span class="text-[13px] text-gray-600 mb-2">
-                  IEDC Bootcamp CEC in association with IPL, Innovators Premier
-                  League
-                  <br /> is here with a session on Resume Building.
+                {item.description}
                 </span>
-                <div class="flex">
-                  <a href="" class="font-bold text-[13px] mb-2">
-                    Aromal Santhosh
-                  </a>
                 </div>
-                <div class="flex">
-                  <span class="text-[13px]    text-gray-600"> Room 314 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 23 Nov 2022 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 4:00 pm </span>
-                </div>
-              </div>
-              <div class="w-44 h-44">
-                <img class="w-full h-full object-cover" src="" alt="" />
+              <div class="w-44 h-44 mb-32">
+                <img class="w-full h-full object-cover" src={item.image} alt="" />
               </div>
             </div>
           </div>
         </div>
-
-        <div data-aos="fade-right" class="mt-7">
-          <div class="mt-1 mb-7">
-            <div class="flex flex-row">
-              <div class="flex flex-col">
-                <button class="text-[12px] text-gray-600 bg-gray-100 mb-2 w-20 py-1 rounded-md">
-                  Workshop
-                </button>
-                <div class="flex flex-col"></div>
-                <a href="" class="font-bold text-[16px] mb-2">
-                  HackLeague
-                </a>
-                <span class="text-[13px] text-gray-600 mb-2">
-                  IEDC Bootcamp CEC in association with IPL, Innovators Premier
-                  League
-                  <br /> is here with a session on Resume Building.
-                </span>
-                <div class="flex">
-                  <a href="" class="font-bold text-[13px] mb-2">
-                    Aromal Santhosh
-                  </a>
-                </div>
-                <div class="flex">
-                  <span class="text-[13px]    text-gray-600"> Room 314 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 23 Nov 2022 </span>
-                  <span class="text-[13px] text-gray-600"> • </span>
-                  <span class="text-[13px] text-gray-600"> 4:00 pm </span>
-                </div>
-              </div>
-              <div class="w-44 h-44 ml-5">
-                <img class="w-full h-full object-cover" src="" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+   </SwiperSlide>)
+})}
+</Swiper>
       </div>
+      <div className="sm:hidden block">
+      <Swiper
+        direction={"vertical"}
+        height={100}
+        loop={true}
+        slidesPerView={1}
+        spaceBetween={100}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+        className="mySwiper"
+        >
+        {data &&
+            data.map(item => {
+              return (
+                <SwiperSlide>
 
-      <div data-aos="fade-left" class="ml-96 mt-16 sm:block hidden ">
+        <div data-aos="fade-right" class="mt-7 mb-32">
+          <div class="mt-1 mb-7 mr-32 ">
+            <div class="flex flex-row">
+              <div class="flex flex-col">
+                <a href="" class="font-bold text-[16px] mb-2">
+                {item.title}
+                </a>
+                <span class="text-[13px] text-gray-600 mb-2">
+                {item.description}
+                </span>
+             </div>
+              <div class="w-44 h-44 mb-32">
+                <img class="w-full h-full object-cover" src={item.image} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+   </SwiperSlide>
+)
+})}
+</Swiper>
+</div>
+</div>
+
+
+
+<div data-aos="fade-left" class="ml-96 mt-16 sm:block hidden ">
         <ul class="flex items-center">
           <li class="flex mr-6 my-2">
             <button class="text-[12px] text-gray-600 bg-white hover:bg-gray-100 text-gray-800 py-2 px-6 border border-gray-200 rounded shadow">

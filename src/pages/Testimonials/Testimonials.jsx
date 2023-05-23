@@ -1,9 +1,12 @@
 import React from 'react'
+import "aos/dist/aos.css"
+import img1 from "../../images/Sub team/FuhadSanin.jpg"
+
 
 export default function Testimonials() {
   return (
     <div id='testimonials'>
-    <div  class="flex items-center my-7">
+    <div  class="flex items-center my-2">
       <div class="p-[6px] rounded-md bg-black mr-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,83 +26,87 @@ export default function Testimonials() {
       </div>
       <h2  class="text-2xl">Testimonials</h2>
     </div>
-    <div class="flex flex-col">
-      <div class="flex bg-white justify-between mt-7">
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
-            </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
+    <div class="pt-16 mb-16 flex flex-col mr-16 ">
+      <div className="flex flex-row flex-wrap justify-between gap-6">
+        <div class="w-[500px] h-[150px] flex flex-col items-center justify-center border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+        >
+          <div class="w-[70%] h-[40%] mr-16">
+            <p class="italic text-[12px] text-gray-500 text-center">
+             " As a leading innovation hub, we are committed to fostering a
+              culture of creativity and out-of-the-box thinking. We offer a
+              range of programs and services designed to support innovators at
+              all stages of their journey, from ideation to commercialization."
+            </p>
           </div>
-        </div>
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
+
+          <div class="bg-white w-[50px] h-[50px] mr-12 rounded-full  ml-96 ">
+              <img
+                class= "object-contain rounded-full w-full h-full object-cover  shadow-xl"
+                src={img1}
+                alt=""
+              />
             </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
-          </div>
         </div>
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
+
+        <div class="w-[500px] h-[150px] flex flex-col items-center justify-center border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+        >
+          <div class="w-[70%] h-[40%] mr-16">
+            <p class="italic text-[12px] text-gray-500 text-center">
+             " As a leading innovation hub, we are committed to fostering a
+              culture of creativity and out-of-the-box thinking. We offer a
+              range of programs and services designed to support innovators at
+              all stages of their journey, from ideation to commercialization."
+            </p>
+          </div>
+
+          <div class="bg-white w-[50px] h-[50px] mr-12 rounded-full  ml-96 ">
+              <img
+                class= "object-contain rounded-full w-full h-full object-cover  shadow-xl"
+                src={img1}
+                alt=""
+              />
             </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
-          </div>
         </div>
-      </div>
-      <div class="flex bg-white justify-between mt-7">
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
+
+        <div class="w-[500px] h-[150px] flex flex-col items-center justify-center border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+        >
+          <div class="w-[70%] h-[40%] mr-16">
+            <p class="italic text-[12px] text-gray-500 text-center">
+             " As a leading innovation hub, we are committed to fostering a
+              culture of creativity and out-of-the-box thinking. We offer a
+              range of programs and services designed to support innovators at
+              all stages of their journey, from ideation to commercialization."
+            </p>
+          </div>
+
+          <div class="bg-white w-[50px] h-[50px] mr-12 rounded-full  ml-96 ">
+              <img
+                class= "object-contain rounded-full w-full h-full object-cover  shadow-xl"
+                src={img1}
+                alt=""
+              />
             </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
-          </div>
         </div>
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
+        <div class="w-[500px] h-[150px] flex flex-col items-center justify-center border-none border-gray-300 rounded-2xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+        >
+          <div class="w-[70%] h-[40%] mr-16">
+            <p class="italic text-[12px] text-gray-500 text-center">
+             " As a leading innovation hub, we are committed to fostering a
+              culture of creativity and out-of-the-box thinking. We offer a
+              range of programs and services designed to support innovators at
+              all stages of their journey, from ideation to commercialization."
+            </p>
+          </div>
+
+          <div class="bg-white w-[50px] h-[50px] mr-12 rounded-full  ml-96 ">
+              <img
+                class= "object-contain rounded-full w-full h-full object-cover  shadow-xl"
+                src={img1}
+                alt=""
+              />
             </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="text-3xl text-gray-300 font-bold mr-4">01</div>
-          <div class="mt-2">
-            <h6 class="text-[13px] mb-2">John Doe</h6>
-            <div class="mb-2">
-              <a href="" class="font-bold">Angular v15 is now available!</a>
             </div>
-            <span class="text-[13px] text-gray-600"> Nov 17 </span>
-            <span class="text-[13px] text-gray-600"> • </span>
-            <span class="text-[13px] text-gray-600"> 10 min read </span>
-          </div>
-        </div>
-      </div>
+            </div>
     </div>
   </div>
   )

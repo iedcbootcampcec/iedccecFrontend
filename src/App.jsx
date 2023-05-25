@@ -8,7 +8,6 @@ import Subteam from "./pages/Sub team/Subteam"
 import { About } from "./pages/About/About"
 import { Iet } from "./pages/IET/Iet"
 
-
 function App() {
   return (
     <div>
@@ -23,7 +22,6 @@ function App() {
         <Team />
         <Subteam />
         <Testimonials />
-       
       </div>
       <div>
         <Footer />

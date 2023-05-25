@@ -65,6 +65,34 @@ export const Tab = () => {
               industries and academia. IEDCs play a vital role in fostering
               entrepreneurship, and it is essential for educational institutions
               to establish them to promote innovation and entrepreneurship.
+              <br />
+              <br />
+              - Promote entrepreneurial mindset: The club aims to encourage
+              students to adopt an entrepreneurial mindset by thinking
+              creatively, identifying opportunities, and taking calculated
+              risks.
+              <br />
+              <br />
+              - Skill development: The club focuses on developing practical
+              skills necessary for entrepreneurship, such as leadership,
+              problem-solving, communication, teamwork, and business management.
+              <br />
+              <br />
+              - Knowledge sharing: The club organizes events where successful
+              entrepreneurs and industry experts share their experiences,
+              insights, and knowledge with students, helping them gain a better
+              understanding of entrepreneurship.
+              <br />
+              <br />
+              - Networking opportunities: The club facilitates events and
+              activities that allow students to connect with fellow
+              entrepreneurs, mentors, investors, and professionals from various
+              industries, enabling valuable networking opportunities.
+              <br />
+              <br />- Incubation and support: The club provides support to
+              students in launching their startup ventures, offering resources,
+              mentorship, guidance on business planning, and access to funding
+              opportunities.
             </p>
           </div>
 

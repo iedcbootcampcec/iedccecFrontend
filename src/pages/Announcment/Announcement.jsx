@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode, Scrollbar, Mousewheel } from "swiper"
 import "aos/dist/aos.css"
 import "swiper/swiper-bundle.min.css"
-import data from "./Announcement.json"
+import data from "./data"
 import "./style.css"
 
 export default function Announcement() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: false })
   }, [])
+
   return (
     <div id="announcement" class="flex flex-row">
       <div class="mb-16">

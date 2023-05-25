@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "src/images/Announcment/a1.jpeg",
+    "image": "public/images/achievements/achieve1.jpeg",
     "title": "Hack League",
     "description": "IEDC WE Cell is here with Introduction to JavaScript, 5-day workshop to learn to use JS and create dynamic and interactive web pages. The session will be handled by Nandkishor R(Fullstack web developer, Freelancer). "
   },

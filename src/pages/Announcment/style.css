@@ -1,0 +1,12 @@
+#announcement .swiper {
+  width: 100%;
+  height: 500px;
+}
+
+#announcement .swiper-slide {
+  font-size: 18px;
+  height: 1000px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+}

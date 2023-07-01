@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 1,
+    "image": "/images/Announcment/a1.jpeg",
+    "title": "Hack League",
+    "description":
+      "IEDC WE Cell is here with Introduction to JavaScript, 5-day workshop to learn to use JS and create dynamic and interactive web pages. The session will be handled by Nandkishor R(Fullstack web developer, Freelancer). "
+  },
+  {
+    "id": 2,
+    "image": "/images/Announcment/a2.jpeg",
+    "title": "TechForge",
+    "description":
+      "Get ready to unleash your skills and join us in TechForge the daily challenge by IEDC Bootcamp CEC. Whether you are a hardware enthusiast, a coding whiz, or a design guru, there is something for everyone!"
+  },
+  {
+    "id": 3,
+    "image": "/images/Announcment/a3.jpeg",
+    "title": " Design Workshop",
+    "description":
+      "  As part of WE_WEEK IEDC We Cell is here with an exciting Design Workshop to aid you to create stunning designs using Figma.Whether you're a beginner or an experienced designer, you'll walk away with skills,  experience, and valuable insights from our experienced mentor Sreelakshmi M, State Creative Lead IEDC NEST."
+  }
+]

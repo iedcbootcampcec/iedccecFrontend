@@ -2,6 +2,7 @@ import Navlink from "../../components/atoms/Navlink"
 import React, { useRef, useState } from "react"
 import "./Navbar.css"
 import { FaTimes, FaBars } from "react-icons/fa"
+import logo from "/images/logo/CEC_Logo_HD_black-1.png"
 
 function Nav() {
   const [nav, setNav] = useState(false)
@@ -20,10 +21,13 @@ function Nav() {
   }
   return (
     <header className={nav && "header-bg"}>
-      <div className="px-[65px]">
+      <div className=" px-[5%] flex">
+        <div className="w-[40px] h-[40px]">
+          <img src={logo} />
+        </div>
         <svg
-          width="60"
-          height="29"
+          width="80"
+          height="40"
           viewBox="0 0 60 29"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode, Scrollbar, Mousewheel } from "swiper"
 import "aos/dist/aos.css"
 import "swiper/swiper-bundle.min.css"
-import data from "./data"
+import data from "./data.json"
 import "./style.css"
 
 export default function Announcement() {

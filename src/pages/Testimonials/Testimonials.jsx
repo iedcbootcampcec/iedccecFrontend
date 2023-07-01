@@ -1,6 +1,6 @@
 import React from "react"
 import "aos/dist/aos.css"
-import img1 from "../../images/Sub team/FuhadSanin.jpg"
+import img1 from "/images/Sub team/FuhadSanin.jpg"
 
 export default function Testimonials() {
   return (

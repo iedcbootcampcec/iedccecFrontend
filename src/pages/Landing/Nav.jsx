@@ -2,7 +2,7 @@ import Navlink from "../../components/atoms/Navlink"
 import React, { useRef, useState } from "react"
 import "./Navbar.css"
 import { FaTimes, FaBars } from "react-icons/fa"
-import logo from "../../images/logo/CEC_Logo_HD_black-1.png"
+import logo from "/images/logo/CEC_Logo_HD_black-1.png"
 
 function Nav() {
   const [nav, setNav] = useState(false)

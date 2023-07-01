@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import img1 from "../../images/iet/innovative.jpeg"
-import img2 from "../../images/iet/entrepreneurship.jpeg"
-import img3 from "../../images/iet/technology.jpeg"
+import img1 from "/images/iet/innovative.jpeg"
+import img2 from "/images/iet/entrepreneurship.jpeg"
+import img3 from "/images/iet/technology.jpeg"
 import { Quotes } from "./Quotes"
 
 export const Iet = () => {

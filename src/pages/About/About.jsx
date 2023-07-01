@@ -1,5 +1,5 @@
 import React from "react"
-import college from "../../images/About/College_clipart.jpg"
+import college from "/images/About/College_clipart.jpg"
 import { Tab } from "./Tab"
 
 export const About = () => {
